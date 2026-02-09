@@ -345,10 +345,10 @@ img {
    
    If your styles aren't showing up:
    1. Check that your CSS file is linked correctly in index.html:
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="style.css">
    
    2. Make sure the file path is correct. If index.html is in the root folder,
-      and style.css is in a "css" folder, the path "css/style.css" is correct.
+      and style.css is also in the root folder, the path "style.css" is correct.
    
    3. Check for typos in your CSS. Missing semicolons (;) or curly braces ({})
       can break your styles.

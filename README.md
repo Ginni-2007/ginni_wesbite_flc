@@ -30,10 +30,8 @@ JavaScript makes your webpage interactive. Think of it as the electrical system 
 website-workshop-starter/
 │
 ├── index.html          # Main HTML file - the structure of your webpage
-├── css/
-│   └── style.css       # CSS file - styles and appearance
-├── js/
-│   └── script.js       # JavaScript file - interactivity and behavior
+├── style.css           # CSS file - styles and appearance
+├── script.js           # JavaScript file - interactivity and behavior
 ├── assets/             # Folder for images and other media files
 │                       # (currently empty - add your images here)
 └── README.md           # This file - project documentation
@@ -43,9 +41,9 @@ website-workshop-starter/
 
 - **index.html**: This is the main file that browsers read. It contains all your content (text, headings, images) and links to your CSS and JavaScript files. Open this file in a browser to see your website.
 
-- **css/style.css**: This file contains all your styling rules. It controls colors, fonts, spacing, and layout. The HTML file links to this CSS file so the styles are applied to your page.
+- **style.css**: This file contains all your styling rules. It controls colors, fonts, spacing, and layout. The HTML file links to this CSS file so the styles are applied to your page.
 
-- **js/script.js**: This file contains JavaScript code that makes your page interactive. It can respond to button clicks, change content, and perform calculations. The HTML file loads this script to add behavior to your page.
+- **script.js**: This file contains JavaScript code that makes your page interactive. It can respond to button clicks, change content, and perform calculations. The HTML file loads this script to add behavior to your page.
 
 - **assets/**: This folder is for storing images, videos, or other media files you want to use on your website. To add an image, save it in this folder and reference it in your HTML using the path `assets/your-image.jpg`.
 
@@ -107,7 +105,7 @@ Follow the TODO comments in each file to complete these tasks:
 - [ ] Add an image placeholder (or actual image)
 - [ ] Create a new section with an `id` attribute
 
-### CSS Tasks (in css/style.css)
+### CSS Tasks (in style.css)
 
 - [ ] Change the font-family
 - [ ] Change the background-color
@@ -118,7 +116,7 @@ Follow the TODO comments in each file to complete these tasks:
 - [ ] Create a "card" class for styling sections
 - [ ] Style the footer section
 
-### JavaScript Tasks (in js/script.js)
+### JavaScript Tasks (in script.js)
 
 - [ ] Use `document.querySelector()` to select an element
 - [ ] Change text content using `.textContent`
@@ -281,9 +279,9 @@ After making changes to your code:
 **Problem: CSS or JavaScript not loading**
 
 - **Solution**: Check that file paths in `index.html` are correct:
-  - `<link rel="stylesheet" href="css/style.css">` (not `/css/style.css` or `./css/style.css`)
-  - `<script src="js/script.js"></script>` (not `/js/script.js`)
-- **Solution**: Make sure your `css` and `js` folders exist and contain the files
+  - `<link rel="stylesheet" href="style.css">` (not `/style.css` or `./style.css`)
+  - `<script src="script.js"></script>` (not `/script.js`)
+- **Solution**: Make sure `style.css` and `script.js` are in the same directory as `index.html`
 
 **Problem: Images not showing**
 
@@ -295,9 +293,9 @@ After making changes to your code:
 
 ### Why doesn't my CSS apply?
 
-1. **Check the file path**: In `index.html`, make sure the link tag says `href="css/style.css"` (relative path, not absolute)
+1. **Check the file path**: In `index.html`, make sure the link tag says `href="style.css"` (relative path, not absolute)
 
-2. **Check file location**: Make sure `style.css` is inside a folder named `css` in the same directory as `index.html`
+2. **Check file location**: Make sure `style.css` is in the same directory as `index.html`
 
 3. **Check for typos**: CSS is case-sensitive. Make sure selectors match your HTML exactly
 
@@ -307,9 +305,9 @@ After making changes to your code:
 
 ### Why doesn't my JavaScript run?
 
-1. **Check the script tag**: Make sure `index.html` has `<script defer src="js/script.js"></script>` before the closing `</body>` tag
+1. **Check the script tag**: Make sure `index.html` has `<script defer src="script.js"></script>` before the closing `</body>` tag
 
-2. **Check the file path**: The path should be `js/script.js` (relative, not absolute)
+2. **Check the file path**: The path should be `script.js` (relative, not absolute)
 
 3. **Check the Console**: Open Developer Tools (F12) -> Console tab. JavaScript errors will appear in red
 
