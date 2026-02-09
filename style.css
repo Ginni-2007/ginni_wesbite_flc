@@ -204,6 +204,31 @@ main {
 
   padding: 20px;
   /* Adds space inside the main content area */
+
+}
+section{
+  margin-bottom: 60px;
+}
+section h2{
+  font-size: 32px;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+section p{
+  margin-bottom: 15px;
+  color: black;
+}
+.about-content{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* ============================================
@@ -290,8 +315,14 @@ a button:hover {
   - margin-bottom: 20px; (space below the card)
 */
 
-.card {
+.project-card {
   /* TODO #8: Add your card styles here */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 /* ============================================
